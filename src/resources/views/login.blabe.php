@@ -6,6 +6,7 @@
     <title>login</title>
     <link rel="stylesheet" href="{{ asset('css/reset.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/login.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/common.css') }}" />
 </head>
 <body>
     <header class="header">

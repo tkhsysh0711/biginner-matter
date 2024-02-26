@@ -6,6 +6,7 @@
     <title>register</title>
     <link rel="stylesheet" href="{{ asset('css/reset.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/register.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/common.css') }}" />
 </head>
 <body>
     <header class="header">
