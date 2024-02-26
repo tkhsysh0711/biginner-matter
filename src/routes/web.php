@@ -13,16 +13,19 @@ Route::get('/login', [AuthController::class, 'index']);
 
 Route::post('/login', [AuthController::class, 'login']);
 
-Route::post('/logout', [AuthController::class, 'logout']);
+Route::middleware('auth')->group(function () {
 
-Route::get('/', [AttendanceController::class, 'index']);
+    Route::post('/logout', [AuthController::class, 'logout']);
 
-Route::post('/attendance/start', [AttendanceController::class, 'startAttendance']);
+    Route::get('/', [AttendanceController::class, 'index']);
 
-Route::post('/attendance/end', [AttendanceController::class, 'endAttendance']);
+    Route::post('/attendance/start', [AttendanceController::class, 'startAttendance']);
 
-Route::post('/rest/start', [AttendanceController::class, 'startRest']);
+    Route::post('/attendance/end', [AttendanceController::class, 'endAttendance']);
 
-Route::post('/rest/end', [AttendanceController::class, 'endRest']);
+    Route::post('/rest/start', [AttendanceController::class, 'startRest']);
 
-Route::get('/attendance/{num}', [AttendanceController::class, 'getAttendance']);
+    Route::post('/rest/end', [AttendanceController::class, 'endRest']);
+
+    Route::get('/attendance/{num}', [AttendanceController::class, 'getAttendance']);
+});

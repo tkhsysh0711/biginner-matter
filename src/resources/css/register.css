@@ -1,0 +1,45 @@
+.register__content {
+    text-align: center;
+    height: 80vh;
+    padding: 30px 0;
+}
+
+.register__title {
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+.form__name,
+.form__email,
+.form__pass,
+.form__pass-check {
+    width: 350px;
+    height: 40px;
+    margin-bottom: 30px;
+    background-color: #f2f2f2;
+    border: 2px solid #838383;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.form__button {
+    width: 350px;
+    height: 40px;
+    color: #fff;
+    background-color: #214be0;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.text-info {
+    color: #838383;
+    font-size: 14px;
+    margin: 0;
+}
+
+.link-login {
+    color: #214be0;
+    font-size: 14px;
+    text-decoration: none;
+}
