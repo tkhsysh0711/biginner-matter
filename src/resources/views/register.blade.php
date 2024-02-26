@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,25 +10,24 @@
 <body>
     <header class="header">
         <div class="header_inner">
-            <h1 class="header_logo">
-                Atte
-            </h1>
+            <h1 class="header_logo">Atte</h1>
         </div>
     </header>
 
     <main>
-        <div class=register_content>
-            <h2 class="register_title">
+        <div class=register__content>
+            <h2 class="register__title">
                 会員登録
             </h2>
 
-            <form class="form">
+            <form class="form" action="/resister" method="post">
+                @csrf
                 <div class="form__name">
-                    <input type="text" name="name" placeholder="名前">
+                    <input type="text" name="name" value="{{ old('name') }}" placeholder="名前">
                 </div>
 
                 <div class="form__email">
-                    <input type="text" name="email" placeholder="メールアドレス">
+                    <input type="text" name="email" value="{{ old('email') }}" placeholder="メールアドレス">
                 </div>
 
                 <div class="form__pass">
