@@ -46,7 +46,7 @@
 
             <div class="register-text">
                 <p class="text-info">アカウントをお持ちの方はこちら</p>
-                <a class="link-login" href="">ログイン</a>
+                <a class="link-login" href="/login">ログイン</a>
             </div>
         </div>
     </main>
