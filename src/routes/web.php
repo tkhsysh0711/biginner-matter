@@ -5,13 +5,13 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AttendanceController;
 
-Route::get('/register', [RegisterController::class, 'index']);
+//Route::get('/register', [RegisterController::class, 'index']);
 
-Route::post('/register', [RegisterController::class, 'store']);
+//Route::post('/register', [RegisterController::class, 'store']);
 
-Route::get('/login', [AuthController::class, 'index']);
+//Route::get('/login', [AuthController::class, 'index']);
 
-Route::post('/login', [AuthController::class, 'login']);
+//Route::post('/login', [AuthController::class, 'login']);
 
 Route::middleware('auth')->group(function () {
 
