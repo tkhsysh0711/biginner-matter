@@ -1,15 +1,101 @@
-.header{
-    width: 100%;
+body {
+    height: 100vh;
 }
 
-main {
-    background-color: #898989;
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    margin-left: 65px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav__item {
+    margin-right: 65px;
+    font-weight: bold;
+}
+
+.header-nav__button {
+    font-size: 1em;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main {
+    background-color: #f2f2f2;
+    height: 85%;
 }
 
 .footer {
-    width: 100%;
-    height: 80px;
+    height: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.credit {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.page-links {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination {
+    display: flex;
+    width: fit-content;
+}
+
+.page-item {
+    border: 1px solid #eee;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.page-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #2384cf;
+}
+
+.page-item.active {
+    background-color: #2384cf;
+}
+
+.page-item.active .page-link {
+    color: #fff;
+}
+
+.page-item.disabled .page-link {
+    color: #777;
 }
