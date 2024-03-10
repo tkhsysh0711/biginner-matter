@@ -11,9 +11,7 @@
 <body>
     <header class="header">
 
-    <div class="header__logo">
-      <a href="/">Atte</a>
-    </div>
+      <h1 class="header__logo">Atte</h1>
 
       <nav>
 
@@ -21,10 +19,6 @@
 
           <li class="header-nav__item">
             <a class="header-nav__link" href="/">ホーム</a>
-          </li>
-
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="/user">会員一覧</a>
           </li>
 
           <li class="header-nav__item">
