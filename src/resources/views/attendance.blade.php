@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -89,23 +89,23 @@
             <div class="attendance-row">
 
                 <div class="attendance-cell left">
-                    <div class="inner-cell">{{ $['name'] }}</div>
+                    <div class="inner-cell">{{ $Users['name'] }}</div>
                 </div>
 
                 <div class="attendance-cell">
-                    <div class="inner-cell">{{ $['clocked_in_at_str'] }}</div>
+                    <div class="inner-cell">{{ $Attendances['start'] }}</div>
                 </div>
 
                 <div class="attendance-cell">
-                    <div class="inner-cell">{{ $['clocked_out_at_str'] }}</div>
+                    <div class="inner-cell">{{ $Attendances['end'] }}</div>
                 </div>
 
                 <div class="attendance-cell">
-                    <div class="inner-cell">{{ $['break_time_str'] }}</div>
+                    <div class="inner-cell">{{ $Rests['rest_end'] - $Rests['rest_start'] }}</div>
                 </div>
 
                 <div class="attendance-cell">
-                    <div class="inner-cell">{{ $attendance['work_time_str'] }}</div>
+                    <div class="inner-cell">{{ ($Attendances['end'] - $Attendances['start']) - ($Rests['rest_end'] - $Rests[]'rest_start']) }}</div>
                 </div>
 
             </div>

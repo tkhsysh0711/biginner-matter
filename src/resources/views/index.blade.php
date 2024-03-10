@@ -11,9 +11,7 @@
 <body>
     <header class="header">
 
-    <div class="header__logo">
-      <a href="/">Atte</a>
-    </div>
+      <h1 class="header__logo">Atte</h1>
 
       <nav>
 
